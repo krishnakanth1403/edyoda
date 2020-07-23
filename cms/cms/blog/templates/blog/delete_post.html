@@ -1,0 +1,21 @@
+{% extends "blog/base.html" %}
+{% load static %}
+{% block content %} 
+<!DOCTYPE html>
+<html>
+    <head>
+
+    </head>
+    <body>
+    <div>
+        <form id="delete_blog_post" method="POST">
+            {% csrf_token %}
+            <p class="delete-para">Are you sure you want to delete this post: "<span class="font-weight-bold">{{ post.title }}</span>"</p>
+            <input type="submit" class="delete-confirm" value="Confirm">
+            <!-- <input type="submit" onclick="window.history.back();" class="cancel" value="Cancel"> -->
+        </form>
+    </div>
+    
+    </body>
+    {% endblock %} 
+</html>

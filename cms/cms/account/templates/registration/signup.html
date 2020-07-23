@@ -1,0 +1,55 @@
+{% extends 'blog/base.html' %}
+{% load static %}
+{% load widget_tweaks %}
+{% block extra_head %}
+<link href="{% static 'blog/css/post_form.css' %}"  rel="stylesheet">
+{% endblock %}
+{% block content %}
+<div class="signup-border">
+    <form method="POST" enctype="multipart/form-data">
+        {% csrf_token %}
+            <h2 class="login-h2">Sign Up</h2>
+            <div class="name-lable">{{ form.first_name.label }}</div>
+            <div class="name-field">{{ form.first_name|add_class:"form-fields"}}</div>
+            <div class="name-lable">{{ form.last_name.label }}</div>
+            <div class="first_name">{{ form.last_name|add_class:"form-fields"}}</div>
+            <div class="name-lable">{{ form.email.label }}</div>
+            <div class="first_name">{{ form.email|add_class:"form-fields"}}</div>
+            <div class="name-lable">{{ form.username.label }}</div>
+            <div class="first_name">{{ form.username|add_class:"form-fields"}}</div>
+            <p style="color: #78909c blue-grey lighten-1; font-size: 15px;">{{ form.username.help_text }}</p>
+            <div class="name-lable">{{ form.password1.label }}</div>
+            <div class="first_name">{{ form.password1|add_class:"form-fields"}}</div>
+            <p style="color: #78909c blue-grey lighten-1; font-size: 15px;">{{ form.password1.help_text }}</p>
+            <div class="name-lable">{{ form.password2.label }}</div>
+            <div class="first_name">{{ form.password2|add_class:"form-fields"}}</div>
+            
+                <!--{% for field in form %}
+                <p >
+                    <div class="signup-labels">{{ field.label_tag }}</div>
+                    <div class="signup-fields">{{ field|add_class:"login-fields" }}</div>
+                </p>
+                {% endfor %} -->
+                <span id="err">
+                    {{ form.non_field_errors }}
+                </span>
+        <!--{{ form.as_p }}-->
+        <!--{{ form.first_name.label_tag }}
+        {{ form.first_name }}
+        {{ form.last_name.label_tag }}
+        {{ form.last_name }}
+        {{ form.username.label_tag }}
+        {{ form.username }}
+       <p style="color: #78909c blue-grey lighten-1; font-size: small;">{{ form.username.help_text }}</p>
+        {{ form.username.errors }}
+        {{ form.email.label_tag }}
+        {{ form.email }}
+        {{ form.password1.label_tag }}
+        {{ form.password1 }}
+        {{ form.password2.label_tag }}
+        {{ form.password2 }}-->
+        <a href="{% url 'home' %}"><input class="signup-btn" type="submit" value="Register"></a>
+    </form>
+</div>
+
+{% endblock %}

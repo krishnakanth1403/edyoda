@@ -1,0 +1,25 @@
+{% extends 'blog/base.html' %}
+{% load static %}
+{% load widget_tweaks %}
+{% block extra_head %}
+<link href="{% static 'blog/css/post_form.css' %}"  rel="stylesheet">
+{% endblock %}
+{% block content %}
+<div class="post-border">
+<form method="POST" enctype="multipart/form-data">
+    {% csrf_token %}
+        <h2>Add Your Own Story</h2>
+        <div class="title-field">{{ form.title.label }}</div>
+        <div class="title">{{ form.title|add_class:"form-fields"}}</div>
+        <div class="content-field">{{ form.content.label }}</div>
+        <div class="content">{{ form.content|add_class:"content"}}</div>
+        <div class="status-field">{{ form.status.label }}</div>
+        <div class="status">{{ form.status|add_class:"status"}}</div>
+        <div class="category-field">{{ form.category.label }}</div>
+        <div class="category">{{ form.category|add_class:"category"}}</div>
+        <div class="image-field">{{ form.image.label }}</div>
+        <div class="title">{{ form.image|add_class:"form-fields"}}</div>
+    <input class="submit-btn" type="submit" value="Submit">
+</form>
+</div>
+{% endblock %}

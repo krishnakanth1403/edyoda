@@ -1,0 +1,106 @@
+.form-fields {
+    width: 100%;
+    height: 25px;
+    border-radius: 7px;
+    margin-top: 5px; 
+}
+
+.content {
+    height: 250px;
+    width: 100%;
+    border-radius: 7px;
+    margin-top: 5px;
+}
+
+.title-field {
+    font-size: 25px;
+    font-family: cursive;
+    font-weight: 20px;
+    
+}
+
+.content-field {
+    font-size: 25px;
+    margin-top: 5px;
+    font-family: cursive;
+    font-weight: 20px;
+    
+}
+
+.status-field {
+    font-size: 25px;
+    margin-top: 300px;
+    font-family: cursive;
+    font-weight: 20px;
+    
+}
+
+.category-field {
+    font-size: 25px;
+    margin-top: 10px;
+    font-family: cursive;
+    font-weight: 20px;
+    
+}
+
+.image-field {
+    font-size: 25px;
+    margin-top: 10px;
+    font-family: cursive;
+    font-weight: 20px;
+    
+}
+
+.status {
+    width: 100%;
+    height: 25px;
+    border-radius: 7px;
+    margin-top: 5px;
+}
+
+.category {
+    width: 100%;
+    height: 25px;
+    border-radius: 7px;
+    margin-top: 5px;
+}
+
+h2 {
+    position: relative;
+    left: 250px;
+    bottom: 30px;
+    color: rgb(0, 132, 255);
+    font-family: cursive;
+    font-weight: 20px;
+}
+
+.submit-btn {
+    margin-top: 10px;
+    width: 150px;
+    height: 40px;
+    border-radius: 15px;
+    background-color: rgb(84, 123, 206);
+    position: relative;
+    left: 250px;
+    top: 50px;
+    font-weight: 20px;
+}
+
+.name-lable {
+    font-size: 20px;
+    font-family: cursive;
+    font-weight: 20px;
+    margin-top: 5px;
+}
+
+.signup-btn {
+    margin-top: 10px;
+    width: 150px;
+    height: 40px;
+    border-radius: 15px;
+    background-color: rgb(84, 123, 206);
+    position: relative;
+    left: 250px;
+    top: 50px;
+    font-weight: 20px;
+}

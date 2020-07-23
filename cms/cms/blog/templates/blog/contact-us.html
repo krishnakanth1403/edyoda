@@ -1,0 +1,28 @@
+{% extends 'blog/base.html' %}
+{% block content %}
+{% load static %}
+{% load widget_tweaks %}
+
+<div class="form-border">
+    <form method="POST">
+        <!-- <span class="form-items">{{ form.as_p }}</span> -->
+
+        {% csrf_token %}
+        <h2 class="login-h2">Contact Us</h2>
+        
+        {% for field in form %}
+            <p>
+                <div class="contact-us-labels">{{ field.label_tag }}</div>
+                <div class="contact-us-fields">{{ field|add_class:"contact-us-fields" }}</div>
+            </p>
+        {% endfor %}
+        <span id="err">
+            {{ form.non_field_errors }}
+        </span>
+
+
+        <input class="contact-us-submit-btn" type="submit" value="Submit">
+    </form>
+</div>
+
+{% endblock %}

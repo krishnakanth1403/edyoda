@@ -1,0 +1,519 @@
+body {
+    background-color: #ECF0F9;
+    margin: 0;
+}
+
+#top-bar {
+    background-color: white;
+    position: fixed;
+    top: 0;
+    left: 0;
+    align-items: center;
+    box-sizing: border-box;
+    box-shadow: 0 1px 1px #ccc;
+    width: 100%;
+    height: 80px;
+    z-index: 90;
+    padding: 1em 4.875em;
+    display: flex;
+    justify-content: left;
+}
+
+.logo-bar {
+    cursor: pointer;
+    position: relative;
+    top: 18px;
+}
+
+.logo {
+    background-image: linear-gradient(269deg,#0048ff,#0096ff), linear-gradient(#000,#000);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    display: block;
+    font-family: "Raleway";
+    font-size: 32px;
+    font-weight: 900;
+    height: 37px;
+    letter-spacing: -0.9px;
+    color: rgb(0, 132, 255);
+    position: relative;
+    top: 16px;
+}
+
+.logo-bar p {
+    font-family: Raleway,sans-serif;
+    font-size: 1em;
+    font-weight: 600;
+    font-style: italic;
+    font-stretch: normal;
+    line-height: .8;
+    letter-spacing: .9px;
+    margin: 0;
+    position: relative;
+    top: 18px;
+}
+
+
+#main {
+    width: 1100px;
+    margin-top: 80px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 12px;
+}
+
+#main h1 {
+    font-family: "Raleway";
+    font-size: 36px;
+    font-weight: 600;
+    letter-spacing: -0.9px;
+    line-height: 69.84px;
+    margin: 0px;
+}
+
+.filter {
+    margin: 12px 0px;
+}
+
+.filter img {
+    width: 24px;
+    vertical-align: middle;
+}
+
+.filter span {
+    font-family: "Raleway";
+    font-size: 13.6px;
+    font-weight: 600;
+    vertical-align: middle;
+}
+
+.category-buttons {
+    margin-bottom: 0px;
+}
+
+.category-buttons button {
+    display: inline-block;
+    color: rgb(0, 132, 255);
+    border: 1px solid rgb(0, 132, 255);
+    border-radius: 20px;
+    background-color: transparent;
+    font-family: "Raleway";
+    font-size: 12px;
+    cursor: pointer;
+    min-width: 50px;
+    padding: 6px 14px;
+    margin: 5px;
+}
+
+#card-holder {
+    width: 1100px;
+    margin-top: 0px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 12px;
+    padding-top: 0px;
+
+}
+
+.card {
+    display: inline-table;
+    background-color: white;
+    width: 312px;
+    height: 402px;
+    border: 1px solid rgba(0,168,255,.3);
+    border-radius: 5px;
+    box-shadow: 0 5px 20px 0 rgba(0,0,0,.1);
+    cursor: pointer;
+    margin: 0px 20px 30px 0px;
+    box-sizing: border-box; 
+}
+
+.card-link {
+    text-decoration: none;
+    color: unset;
+}
+
+.card img {
+    width: 100%;
+    height: 184px;
+    border-top-right-radius: 5px;
+    border-top-left-radius: 5px;
+}
+
+.inner-div {
+    padding: 0px 24px;
+    border-radius: 5px;
+}
+
+.card h3 {
+    font-family: 'Raleway';
+    font-size: 20px;
+    font-weight: 600;
+    text-align: left;
+    margin: 6px 0px 0px 0px;
+}
+
+.author {
+    font-family: 'Raleway';
+    font-size: .9em;
+    font-weight: 400;
+    font-style: italic;
+    color: #0096ff;
+    margin-top: 6px;
+}
+
+.date {
+    font-family: sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    font-style: normal;
+    color: #000000;
+}
+
+.para {
+    font-family: Raleway;
+    font-size: 14px;
+    font-weight: 400;
+    font-style: normal;
+    opacity: .5;
+    font-stretch: normal;
+    line-height: 1.43;
+    letter-spacing: .35px;
+    text-align: left;
+    color: #000;
+    margin: .3em 0;
+    white-space: pre-wrap;
+}
+
+#bottom-bar {
+    background-color: #172146;
+    bottom: 0;
+    width: 100%;
+    height: 80px;
+}
+
+.form-error {
+    color: red;
+}
+
+.auth-user {
+    position: relative;
+    right: -1070px;
+    font-family: "Raleway";
+    font-size: 1em;
+    font-weight: 600;
+    color: rgb(0, 132, 255);
+    top: -60px;
+}
+
+.auth-user a{
+    padding: 8px;
+    color: rgb(0, 132, 255);
+}
+
+.user-name {
+    position: relative;
+    right: -1080px;
+    font-size: 1em;
+    font-weight: 600;
+    font-family: "Raleway";
+    color: rgb(0, 132, 255);
+    top: -62px;
+    font-size: 20px;
+}
+
+.contact-page {
+    position: relative;
+    right: -948px;
+    font-family: "Raleway";
+    font-size: 1em;
+    font-weight: 600;
+    font-family: "Raleway";
+    color: rgb(0, 132, 255);
+    top: -40px;
+}
+
+.contact-page a{
+    color: rgb(0, 132, 255);
+}
+
+
+.form-label{
+    font-size: 2em;
+}
+
+.form-field input{
+    width: 30%;
+    height: 30px;
+    border: 1px solid #0096ff;
+}
+
+#id_gender{
+    list-style-type: none;
+
+}
+
+.form-items{
+    text-align: center;
+
+}
+
+.login-form > p > label{
+    font-size: 2em;
+
+}
+
+.login-form > p > input{
+    width: 100%;
+    position: relative;
+    left: 30px;
+    top: 20px;
+
+}
+
+.form-border{
+    background-color: white;
+    padding: 100px;
+    width: 720px;
+    position: relative;
+    right: -65px;
+    border-radius: 8px;
+}
+
+
+
+.contact-us-labels {
+    font-size: 20px;
+    font-family: cursive;
+    font-weight: 20px;
+    margin-top: 5px;
+}
+
+.contact-us-fields{
+    border-radius: 10px;
+    position: relative;
+    width: 100%;
+    height: 25px;
+    
+}
+
+.contact-us-submit-btn{
+    margin-top: 10px;
+    width: 150px;
+    height: 40px;
+    border-radius: 15px;
+    background-color: rgb(84, 123, 206);
+    position: relative;
+    left: 250px;
+    top: 50px;
+    font-weight: 20px;
+}
+
+.nonfield{
+    list-style-type: none;
+    color: red;
+}
+
+
+
+.write-blog{
+    position: relative;
+    top: -16px;
+    left: 12em;
+    font-family: "Raleway";
+    font-size: 1em;
+    font-weight: 600;
+    color: rgb(0, 132, 255);
+
+}
+
+.write-blog a{
+    color: rgb(0, 132, 255);
+
+}
+
+.signup-border{
+    background-color: white;
+    padding: 100px;
+    width: 720px;
+    position: relative;
+    right: -65px;
+    border-radius: 8px;
+}
+
+.login-border{
+    background-color: white;
+    padding: 100px;
+    width: 720px;
+    position: relative;
+    right: -65px;
+    border-radius: 8px;
+}
+
+.login-fields {
+    border-radius: 10px;
+    position: relative;
+    width: 100%;
+    height: 25px;
+}
+
+.login-labels {
+    font-size: 20px;
+    font-family: cursive;
+    font-weight: 20px;
+}
+
+.login_grid {
+    display: grid;
+    grid-row-gap: 50px;
+    grid-template-columns: auto auto;
+}
+
+.post-border {
+    background-color: white;
+    padding: 100px;
+    width: 720px;
+    position: relative;
+    right: -65px;
+    border-radius: 8px;
+}
+
+.login-h2 {
+    position: relative;
+    left: 300px;
+    bottom: 30px;
+    color: rgb(0, 132, 255);
+    font-family: cursive;
+    font-weight: 100px;
+}
+
+.login-btn {
+    margin-top: 10px;
+    width: 150px;
+    height: 40px;
+    border-radius: 15px;
+    background-color: rgb(84, 123, 206);
+    position: relative;
+    left: 250px;
+    top: 50px;
+    font-weight: 20px;
+}
+
+.forgot-pswd {
+    position: relative;
+    left: 400px;
+    top: 35px;
+    font-family: cursive;
+    font-weight: 80px;
+}
+
+.login-signup {
+    position: relative;
+    left: 500px;
+    top: 60px;
+    font-family: cursive;
+    font-weight: 100px;
+}
+/* #dropDown{
+    Border: none;
+} */
+/* Dropdown Button */
+.dropbtn {
+    /* background-color: #4CAF50; */
+    /* color: white; */
+    padding: 16px;
+    font-size: 16px;
+    border: none;
+
+
+    /* position: relative; */
+    /* right: -1080px; */
+    font-size: 1em;
+    font-weight: 600;
+    font-family: "Raleway";
+    color: rgb(0, 132, 255);
+    top: -62px;
+    font-size: 20px;
+  }
+  
+  /* The container <div> - needed to position the dropdown content */
+  .dropdown {
+    position: relative;
+    display: inline-block;
+    right: -1080px;
+    font-size: 1em;
+    font-weight: 600;
+    font-family: "Raleway";
+    color: rgb(0, 132, 255);
+    top: -62px;
+    font-size: 20px;
+  }
+  
+  /* Dropdown Content (Hidden by Default) */
+  .dropElements {
+    display: none;
+    position: absolute;
+    background-color: white;
+    min-width: 160px;
+    font-size: 15px;
+    /* box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2); */
+    z-index: 1;
+  }
+  
+  /* Links inside the dropdown */
+  .dropElements a {
+    color: rgb(0, 132, 255);
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+  }
+  
+  /* Change color of dropdown links on hover */
+  /* .dropElements a:hover {background-color: #ddd;} */
+  
+  /* Show the dropdown menu on hover */
+  .user-name:hover .dropElements {display: block;}
+  
+  /* Change the background color of the dropdown button when the dropdown content is shown */
+  /* .user-name:hover .dropbtn {background-color: #3e8e41;} */
+
+  .email-reset {
+    position: relative;
+    left: 150px;
+    bottom: 30px;
+    color: rgb(0, 132, 255);
+    font-family: cursive;
+    font-weight: 100px;
+  }
+
+  .delete-confirm {
+    margin-top: 10px;
+    width: 150px;
+    height: 40px;
+    border-radius: 15px;
+    background-color: rgb(84, 123, 206);
+    position: relative;
+    left: 450px;
+    top: 5px;
+    font-weight: 20px;
+  }
+
+  .delete-para {
+    font-family: cursive;
+    font-weight: 200px;
+    position: relative;
+    left: 170px;
+    font-size: 30px;
+  }
+
+/* .cancel {
+    margin-top: 10px;
+    width: 150px;
+    height: 40px;
+    border-radius: 15px;
+    background-color: rgb(84, 123, 206);
+    position: relative;
+    left: 400px;
+    top: 10px;
+    font-weight: 20px;
+} */

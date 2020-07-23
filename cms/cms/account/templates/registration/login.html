@@ -1,0 +1,28 @@
+{% extends 'blog/base.html' %}
+{% load widget_tweaks %}
+{% block content %}
+<div class="login-border">
+    <form method="POST" enctype="multipart/form-data" >
+    
+        <!-- <span class="login-form">{{ form.as_p }}</span> -->
+    
+            {% csrf_token %}
+                <h2 class="login-h2">Log In</h2>
+            
+                {% for field in form %}
+                <p >
+                    <div class="login-labels">{{ field.label_tag }}</div>
+                    <div class="login-fields">{{ field|add_class:"login-fields" }}</div>
+                </p>
+                {% endfor %}
+                <span id="err">
+                    {{ form.non_field_errors }}
+                </span>
+            
+        <input class="login-btn" type="submit" value="Login">
+        <a class="forgot-pswd" style="text-decoration:none" href="#">Forgot Password</a>
+    </form>
+    <p class="login-signup">if you are new user please <a style="text-decoration:none" href="{% url 'registering' %}">Sign Up</a></p>
+</div>
+
+{% endblock %}
